@@ -3,81 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <style>
-        /* Add your CSS styles here */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            padding: 20px;
-        }
-        section {
-            padding: 20px;
-            background-color: #fff;
-            margin-bottom: 20px;
-        }
-        h2 {
-            color: #333;
-        }
-        p {
-            line-height: 1.6;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <!-- Font Awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="styles.css">
+    <title>Amir Portfolio</title>
 </head>
 <body>
+    <!-- Header Design -->
+    <header class="header">
+    <a href="#" class="logo">Portfolio</a>
+        
+    <i class="fa-solid fa-bars" id="menu-icon"></i>
 
-<header>
-    <h1>My Portfolio</h1>
-</header>
+    <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    </header>
 
-<div class="container">
+    <!-- Home Section Design -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hi, Myself</h3>
+            <h1>Amir Darabi</h1>
+            <h3>I'm a <span>Frontend Developer</span></h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus odio facilis voluptatum quibusdam optio a dolor illo voluptates voluptatem. Quasi saepe iste ipsa exercitationem. Repellat nam perspiciatis tenetur recusandae laboriosam.</p>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Add information about yourself here.</p>
+            <div class="social-media">
+                <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-meta"></i></a>
+            </div>
+            <a href="#" class="btn">Download CV</a>
+        </div>
+
+        <div class="home-img">
+            <img src="img/portfolio.PNG" alt="portfolio image">
+        </div>
+    </section>  
+
+    <!-- About Section Design -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="img/portfolio.PNG" alt="about-img">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Frontend Developer</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quo modi voluptas ratione perspiciatis, suscipit dicta saepe ea? Aliquam et beatae quia, repudiandae unde molestias veniam neque commodi atque veritatis.</p>
+            <a href="#" class="btn">Read more</a>
+        </div>
+    </section>
+    
+    <!-- Services Section Design -->
+    <section class="services" id="services">
+        <h2 class="heading">My <span>Services</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class="fa-solid fa-code"></i>
+                <h3>Web Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, a architecto? Optio quam nisi ducimus magnam. Quam tenetur enim assumenda. Nihil magnam eveniet officiis fugit odit est dolorum voluptas ipsam.</p>
+                <a href="#" class="btn"> Read More</a>
+            </div>
+            <div class="services-box">
+                <i class="fa-solid fa-palette"></i>
+                <h3>UX/UI Design</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, a architecto? Optio quam nisi ducimus magnam. Quam tenetur enim assumenda. Nihil magnam eveniet officiis fugit odit est dolorum voluptas ipsam.</p>
+                <a href="#" class="btn"> Read More</a>
+            </div>
+            <div class="services-box">
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h3>IOS Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, a architecto? Optio quam nisi ducimus magnam. Quam tenetur enim assumenda. Nihil magnam eveniet officiis fugit odit est dolorum voluptas ipsam.</p>
+                <a href="#" class="btn"> Read More</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Portfolio Section Design -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Projects</span></h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="img/portfolio.PNG"  alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolollamg</p>
+                    <i class="fa-solid fa-share-from-square"></i>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="img/portfolio.PNG"  alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolollamg</p>
+                    <i class="fa-solid fa-share-from-square"></i>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="img/portfolio.PNG"  alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolollamg</p>
+                    <i class="fa-solid fa-share-from-square"></i>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="img/portfolio.PNG"  alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolollamg</p>
+                    <i class="fa-solid fa-share-from-square"></i>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <p>Add information about your projects here.</p>
+    <!-- Contact Section Design -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+            </div>
+            
+            <div class="input-box">
+                <input type="number" placeholder="Phone Number">
+                <input type="text" placeholder="Email Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
     </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <p>Add information about your skills here.</p>
-    </section>
+    <!-- Footer Design -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 by @amir-darabi | All Rights Reserved.</p>
+        </div>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Add your contact information here.</p>
-    </section>
+        <div class="footer-iconTop">
+            <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
+        </div>
+    </footer>
 
-</div>
 
-<footer>
-    <p>&copy; 2024 My Portfolio</p>
-</footer>
 
+    <!-- MAIN JS -->
+    <script src="script.js"></script>
 </body>
 </html>
